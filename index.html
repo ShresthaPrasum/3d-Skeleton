@@ -3,20 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3d Human Skull</title>
-    <link rel="stylesheet" href="style.css">
+    <title>3D Website</title>
+    <style>
+    @font-face {
+        font-family: bungee;
+        src: url(Bungee-font/Bungee-Regular.ttf);
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background: black;
+        font-family: bungee;
+        color: white;
+        flex-direction: column;
+    }
+
+    header{
+        text-align: center;
+    }
+
+    .select{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid white;
+        padding: 40px;
+        border-radius: 15px;
+    }
+
+    .options{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .options h2{
+        cursor: pointer;
+        transition: 0.3s ease;
+        border: 2px solid white;
+        border-radius: 15px;
+        padding: 10px 20px;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    </style>
 </head>
 <body>
     <header>
-        <h1>A 3d Human Skull Website</h1>
+        <h1>3 Dimensional Website</h1>
     </header>
 
     <main>
-        <div id="human-skull">
+        <div class="select">
+            <h1>Select An Object</h1>
+            <div class="options">
+                <h2>
+                    <a href="skeleton.html">Human Skeleton</a>
+                </h2>
+
+                <h2>
+                    <a href="skull.html">Human Skull</a>
+                </h2>
+                <h2>
+                    <a href="porsche.html">Porsche</a>
+                </h2>
+                <h2>
+                    <a href="earth.html">Earth</a>
+                </h2>
+            </div>
             
         </div>
     </main>
-
-    <script type="module" src="main.js"></script>
 </body>
 </html>

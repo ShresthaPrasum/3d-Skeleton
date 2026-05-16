@@ -1,0 +1,30 @@
+@font-face {
+    font-family: bungee;
+    src: url(Bungee-font/Bungee-Regular.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+    font-family: bungee;
+}
+
+header{
+    margin-top: 3rem;
+    text-align: center;
+    color: white;
+}
+
+h1{
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+#human-skull canvas{
+    width: 100vw !important;
+    height: 100vh !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
